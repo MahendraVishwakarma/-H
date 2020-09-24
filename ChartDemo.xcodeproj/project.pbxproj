@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		80AA2B5C251CAB1A00803555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AA2B5A251CAB1A00803555 /* Main.storyboard */; };
 		80AA2B5E251CAB2100803555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80AA2B5D251CAB2100803555 /* Assets.xcassets */; };
 		80AA2B61251CAB2100803555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AA2B5F251CAB2100803555 /* LaunchScreen.storyboard */; };
+		80AA2B69251CC7B300803555 /* Comon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA2B68251CC7B300803555 /* Comon.swift */; };
+		F40FADDFB33CDD762CA799E9 /* Pods_ChartDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E88D39A9F64CE0821132D1 /* Pods_ChartDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C0183EC69460004BFB015C9 /* Pods-ChartDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartDemo.debug.xcconfig"; path = "Target Support Files/Pods-ChartDemo/Pods-ChartDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		80AA2B51251CAB1A00803555 /* ChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80AA2B54251CAB1A00803555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80AA2B56251CAB1A00803555 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		80AA2B5D251CAB2100803555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80AA2B60251CAB2100803555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80AA2B62251CAB2100803555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80AA2B68251CC7B300803555 /* Comon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comon.swift; sourceTree = "<group>"; };
+		B3F3A6EE163FCA5DD2D83E0D /* Pods-ChartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartDemo.release.xcconfig"; path = "Target Support Files/Pods-ChartDemo/Pods-ChartDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F4E88D39A9F64CE0821132D1 /* Pods_ChartDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40FADDFB33CDD762CA799E9 /* Pods_ChartDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				80AA2B53251CAB1A00803555 /* ChartDemo */,
 				80AA2B52251CAB1A00803555 /* Products */,
+				85EBF7C190D7B902390A5511 /* Pods */,
+				CB3B465F8F9F8A8B77C19CF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				80AA2B5D251CAB2100803555 /* Assets.xcassets */,
 				80AA2B5F251CAB2100803555 /* LaunchScreen.storyboard */,
 				80AA2B62251CAB2100803555 /* Info.plist */,
+				80AA2B68251CC7B300803555 /* Comon.swift */,
 			);
 			path = ChartDemo;
+			sourceTree = "<group>";
+		};
+		85EBF7C190D7B902390A5511 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C0183EC69460004BFB015C9 /* Pods-ChartDemo.debug.xcconfig */,
+				B3F3A6EE163FCA5DD2D83E0D /* Pods-ChartDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB3B465F8F9F8A8B77C19CF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4E88D39A9F64CE0821132D1 /* Pods_ChartDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80AA2B65251CAB2100803555 /* Build configuration list for PBXNativeTarget "ChartDemo" */;
 			buildPhases = (
+				92562D616C36154B26B0F77D /* [CP] Check Pods Manifest.lock */,
 				80AA2B4D251CAB1A00803555 /* Sources */,
 				80AA2B4E251CAB1A00803555 /* Frameworks */,
 				80AA2B4F251CAB1A00803555 /* Resources */,
+				387298A7CBA6D61A75594180 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		387298A7CBA6D61A75594180 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartDemo/Pods-ChartDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartDemo/Pods-ChartDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartDemo/Pods-ChartDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92562D616C36154B26B0F77D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80AA2B4D251CAB1A00803555 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				80AA2B59251CAB1A00803555 /* ViewController.swift in Sources */,
 				80AA2B55251CAB1A00803555 /* AppDelegate.swift in Sources */,
+				80AA2B69251CC7B300803555 /* Comon.swift in Sources */,
 				80AA2B57251CAB1A00803555 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +354,11 @@
 		};
 		80AA2B66251CAB2100803555 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0183EC69460004BFB015C9 /* Pods-ChartDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChartDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,16 +366,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = one.ChartDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		80AA2B67251CAB2100803555 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F3A6EE163FCA5DD2D83E0D /* Pods-ChartDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChartDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,8 +386,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = one.ChartDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
